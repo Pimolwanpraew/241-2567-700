@@ -1,0 +1,8 @@
+docker run -p 80:80 nginx
+docker ps --all
+docker run
+docker exec -it <container_id> bash
+Is // list files
+pwd // print working directory
+cd // change directory
+cat // print file content
