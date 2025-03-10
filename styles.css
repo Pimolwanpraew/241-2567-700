@@ -1,69 +1,75 @@
+
 @font-face {
     font-family: 'Kanit';
-    src: url('kanit-regular/');
+    src: url('./Kanit/Kanit-Regular.ttf')
 }
-body{
+body {
     font-family: 'Kanit';
+        background-color:#F2E2B1;
+        font-size: 14px;
 }
 .container{
     width: 100%;
-    max-width: 640px;
-    margin-left: auto;
+    margin-left:auto ;
     margin-right: auto;
-    background-color: royalblue;
+    background-color:#E6B2BA;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 640px;
 }
 .header{
-    font-size: 30px;
-    text-align: 20px;
+    font-size: 24px;
+    text-align: center;
     margin-bottom: 20px;
+
 }
 .header-form{
-    width: 140px;
+    width: 200px;
 }
 .flex{
     display: flex;
 }
-.form-input{
-    margin-bottom: 10px;
+
+.form.input{
+margin-bottom: 10px;
 }
-input.form, textarea {
-    border: 1px solid #ccc;
-    width : 100%
+input.form{
+margin-bottom: 10px;
+}
+input.form, textarea{
+border: 1px solid rgb(54, 87, 220);
+width: 100%;
 }
 .center{
-    text-align: center;
+text-align: center;
 }
 .button{
-    border: 0;
-    width: 50%;
-    height: 40px;
+border: 0;
+width: 50%;
+height: 40px;
+background-color: #C599B6;
 }
-
-.message {
-    margin-buttom: 10px;
-    padding: 10px;
-    background-color: lightgray;
-    display:none;
+.message{
+margin-bottom: 20px;
+background-color: rgb(247, 188, 93);
+display: none;
 }
-.message.success {
-    background-color:lightgreen;
-    display:block;
+.message.success{
+background-color: rgb(69, 239, 95);
+display: block;
 }
-.message.danger {
-    background-color: lightcoral;
-    display:block;
+.message.danger{
+background-color: rgb(239, 69, 69);
+display: block;
 }
-
-@media screen and (max-width: 768px) {
-    .flex {
-        flex-direction: column;
-    }
-    .header {
-        font-size: 24px;
-    }
-    .button {
-        width: 100%;
-    }
+@media screen and (max-width: 768px){
+.flex{
+    flex-direction: column;
+}
+.header{
+    font-size: 24px;
+}
+.button{
+    width: 100%;
+}
 }
